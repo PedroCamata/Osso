@@ -1,0 +1,17 @@
+body {
+    padding: 100px 0px;
+}
+
+/* Grid demo */
+
+#grid-demo .panel {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#grid-demo .panel:nth-child(even) {
+    background: rgb(238, 238, 238);
+}
+
+/* Panel */
