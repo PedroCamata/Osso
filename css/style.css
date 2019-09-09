@@ -10,8 +10,8 @@ body {
     margin-bottom: 10px;
 }
 
-#grid-demo .panel:nth-child(even) {
-    background: rgb(238, 238, 238);
+#grid-demo .panel:nth-child(odd) {
+    background: #EEE;
 }
 
 /* Panel */
