@@ -13,6 +13,19 @@
 </head>
 
 <body>
+  <div class="navbar fixed row">
+    <div class="container">
+      <div class="left-list">
+        <a href="#">logo</a>
+      </div>
+      <div class="right-list">
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <section class="center">
       <div class="heading-demo">
@@ -28,7 +41,7 @@
     <hr>
 
     <section class="center">
-      <h2>Look how the grid works</h2>
+      <h2>Grid</h2>
       <div id="grid-demo">
         <div class="col c12 panel">c12</div>
 
@@ -58,15 +71,15 @@
       <div class="center">
         <h2>Panel</h2>
       </div>
-
       <div class="panel-demo">
         <div class="panel big">
           <div class="center">
-            <h2>Panel is this structure around this text</h2>
+            <h2>Structure around this text</h2>
           </div>
           <p>This is a panel, allow you to put content inside the theme borders
           </p>
-          <p>Paragraphs have 2.5 rem margin bottom, it's kinda cool to have this bigger margin beetwen the text elements
+          <p>Paragraphs have 2.5 rem margin bottom, it's kinda cool to have this bigger margin beetwen the text
+            elements
           </p>
           Anyway this is optional, you can change whatever you want
         </div>
@@ -83,9 +96,6 @@
           #hardcore
         </div>
       </p>
-
-
-
     </section>
 
     <hr>
@@ -193,33 +203,88 @@
             </tr>
           </tbody>
         </table>
-
       </div>
     </section>
 
-    <section>
-      lists
-    </section>
+    <hr>
 
     <section>
-      navbar
+      <div class="row">
+        <h2>Lists</h2>
+      </div>
+      <div class="row">
+        <div class="col c6">
+          <ul>
+            <li>Unordered lists have basic styles</li>
+            <li>
+              They use the circle list style
+              <ul>
+                <li>Nested lists styled to feel right</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Just more list items mama san</li>
+          </ul>
+        </div>
+        <div class="col c6">
+          <ol>
+            <li>Ordered lists also have basic styles</li>
+            <li>
+              They use the decimal list style
+              <ul>
+                <li>Ordered and unordered can be nested</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Last list item just for the fun</li>
+          </ol>
+        </div>
+      </div>
     </section>
+
+    <hr>
+
+    <section>
+      <div class="row">
+        <h2>Navbar</h2>
+      </div>
+      <div class="navbar row">
+        <div class="left-list">
+          <a href="#">logo</a>
+        </div>
+        <div class="right-list">
+          <a href="#">Menu</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <hr>
 
     <section>
       modal
     </section>
 
+    <hr>
+
     <section>
       image components
     </section>
 
+    <hr>
+
     <section>
-      code
+      <div class="row">
+        <h2>Code</h2>
+      </div>
+      <pre><code>function(code) {
+  this.code = code;
+  console.log("be happy and write your code");
+}
+</code></pre>
     </section>
-
-
   </div>
-
 </body>
 
 </html>
