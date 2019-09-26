@@ -10,7 +10,7 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
+.container, .modal-body {
   position: relative;
   width: 100%;
   max-width: 960px;
@@ -303,10 +303,12 @@ td {
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
 td:first-child {
-  padding-left: 0; }
+  padding-left: 0;
+}
 th:last-child,
 td:last-child {
-  padding-right: 0; }
+  padding-right: 0;
+}
 
 /* Panel
 –––––––––––––––––––––––––––––––––––––––––––––––––– */ 
@@ -392,10 +394,12 @@ form {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .full {
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 .max-full {
   max-width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 .center {
   text-align: center;
 }
@@ -407,8 +411,8 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
-
+  border-top: 1px solid #E1E1E1;
+}
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -419,8 +423,43 @@ hr {
 section:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-body {
+  margin-top: 10%;
+  display: block;
+  padding: 3rem 3rem;
+  width: 98%;
+  background: #fff;
+}
+
+.modal-body.small {
+  max-width: 400px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  cursor: pointer;
+}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

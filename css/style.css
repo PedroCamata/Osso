@@ -11,7 +11,7 @@ body {
 }
 
 #grid-demo .panel:nth-child(odd) {
-    background: #EEE;
+    background: #F3F3F3;
 }
 
 /* Panel */

@@ -153,20 +153,20 @@
         </div>
         <div class="center">
           <div>
-            <a class="button" href="#">a element button</a>
-            <a class="button button-primary" href="#">a element button</a>
+            <a class="button" href="#">Button</a>
+            <a class="button button-primary" href="#">Button</a>
           </div>
           <div>
-            <button>Button element</button>
-            <button class="button-primary">Button element</button>
+            <button>Button</button>
+            <button class="button-primary">Button</button>
           </div>
           <div>
-            <input type="submit" value="submit input">
-            <input class="button-primary" type="submit" value="submit input">
+            <input type="submit" value="Button">
+            <input class="button-primary" type="submit" value="Button">
           </div>
           <div>
-            <input type="button" value="button input">
-            <input class="button-primary" type="button" value="button input">
+            <input type="button" value="Button">
+            <input class="button-primary" type="button" value="Button">
           </div>
         </div>
       </form>
@@ -262,29 +262,35 @@
 
     <hr>
 
-    <section>
-      modal
+    <section class="center">
+      <div class="row">
+        <h2>Modal</h2>
+      </div>
+      <div class="row">
+        <a class="button modal-btn" target="uniqueModal">Click to show Bigger Modal</a>
+        <a class="button modal-btn" target="uniqueSmallModal">Click to show Small Modal</a>
+      </div>
     </section>
 
     <hr>
 
-    <section>
+    <section class="center">
       <div class="row">
         <h2>Images</h2>
       </div>
 
-      <div class="row center">
-        <h3>100% width Image</h3>
+      <div class="row">
+        <h4>100% width Image</h4>
         <img class="full" src="https://picsum.photos/465/325?grayscale">
       </div>
-
-      <div class="row center">
-        <h3>Static Image(doesn't change size)</h3>
-        <img class="full opt-zoom" src="https://picsum.photos/674/458?grayscale">
+      <br>
+      <div class="row">
+        <h4>100% width image with option to zoom in</h4>
+        <img class="full zoomable" src="https://picsum.photos/674/458?grayscale">
       </div>
-
-      <div class="row center">
-        <h3>Static Image(doesn't change size)</h3>
+      <br>
+      <div class="row">
+        <h4>Static Image(doesn't change size)</h4>
         <img src="https://picsum.photos/560/300?grayscale">
       </div>
     </section>
@@ -302,6 +308,38 @@
 </code></pre>
     </section>
   </div>
+
+  <div class="modal uniqueModal">
+    <div class="modal-body center">
+      <div class="modal-close modal-btn">x</div>
+      <div class="row">
+        <h2>The Great Example of Modal</h1>
+      </div>
+      <div class="row">
+        <p>
+          There are a lot of things you can make with modals.
+        </p>
+        <small>Sadly pizza isn't one</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal uniqueSmallModal">
+    <div class="modal-body small center">
+      <div class="modal-close modal-btn">x</div>
+      <div class="row">
+        <h2>Very Small Modal</h1>
+      </div>
+      <div class="row">
+        <p>
+          For a lot of small thing
+        </p>
+        <small>Sadly small pizza isn't one</small>
+      </div>
+    </div>
+  </div>
 </body>
+
+<script src="js/bony.js"></script>
 
 </html>
