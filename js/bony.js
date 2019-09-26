@@ -1,6 +1,4 @@
-console.log("alegria");
-
-// Get all modals everytime
+// Modal
 document.addEventListener('click', function (event) {
 
     if (event.target.matches('.modal-btn')
@@ -11,11 +9,6 @@ document.addEventListener('click', function (event) {
     event.preventDefault();
 }, false);
 
-
-// Get all image everytime
-
-
-// Modal
 function modalToggle(modalId) {
     var modals = document.getElementsByClassName(modalId);
     var validId = true;
