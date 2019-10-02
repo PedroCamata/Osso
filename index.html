@@ -71,21 +71,18 @@
       <div class="center">
         <h2>Panel</h2>
       </div>
-      <div class="panel-demo">
-        <div class="panel big">
-          <div class="center">
-            <h2>Structure around this text</h2>
-          </div>
-          <p>This is a panel, allow you to put content inside the theme borders
-          </p>
-          <p>Paragraphs have 2.5 rem margin bottom, it's kinda cool to have this bigger margin beetwen the text
-            elements
-          </p>
-          Anyway this is optional, you can change whatever you want
+      <div class="panel big">
+        <div class="center">
+          <h2>Structure around this text</h2>
         </div>
-
+        <p>This is a panel, allow you to put content inside the theme borders
+        </p>
+        <p>Paragraphs have 2.5 rem margin bottom, it's kinda cool to have this bigger margin beetwen the text
+          elements
+        </p>
+        Anyway this is optional, you can change whatever you want
       </div>
-      <p class="row">
+      <div id="panel-tags" class="col">
         <div class="panel">
           Our just use it at any size
         </div>
@@ -95,7 +92,7 @@
         <div class="panel">
           #hardcore
         </div>
-      </p>
+      </div>
     </section>
 
     <hr>
@@ -125,29 +122,29 @@
         </div>
         <div class="col c6">
           <label>
-            <input type="checkbox">
+            <input type="checkbox" name="check-demo" value="1">
             <span class="label-body">Checkbox 1</span>
           </label>
           <label>
-            <input type="checkbox">
+            <input type="checkbox" name="check-demo2" value="2">
             <span class="label-body">Checkbox 2</span>
           </label>
           <label>
-            <input type="checkbox">
+            <input type="checkbox" name="check-demo3" value="3">
             <span class="label-body">Checkbox 3</span>
           </label>
         </div>
         <div class="col c6">
           <label>
-            <input name="radio-demo" type="radio">
+            <input type="radio" name="radio-demo" value="1">
             <span class="label-body">Checkbox 1</span>
           </label>
           <label>
-            <input name="radio-demo" type="radio">
+            <input type="radio" name="radio-demo" value="2">
             <span class="label-body">Checkbox 2</span>
           </label>
           <label>
-            <input name="radio-demo" type="radio">
+            <input type="radio" name="radio-demo" value="3">
             <span class="label-body">Checkbox 3</span>
           </label>
         </div>
@@ -287,7 +284,9 @@
       <br>
       <div class="row">
         <h4>100% width image with option to zoom in</h4>
-        <img class="full zoomable" src="https://picsum.photos/674/458?grayscale">
+        <div class="col c6 off-c3">
+          <img class="full zoomable" src="https://picsum.photos/674/458?grayscale">
+        </div>
       </div>
       <br>
       <div class="row">
