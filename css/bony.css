@@ -370,8 +370,13 @@ footer {
 
 .footer-content {
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem 0 3rem 0;
   line-height: 3rem;
+}
+
+.footer-content .col div {
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 footer h6 {
@@ -380,7 +385,7 @@ footer h6 {
 
 .footer-line {
   text-align: center;
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
 
