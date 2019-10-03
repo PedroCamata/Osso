@@ -14,7 +14,7 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 
@@ -156,8 +156,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0;
+  background-color: #111;
+  border-color: #111;
 }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -170,8 +170,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB;
+  background-color: #000;
+  border-color: #000;
 }
 
 
@@ -376,11 +376,7 @@ footer {
 
 .footer-content .col div {
   line-height: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-footer h6 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer-line {
@@ -486,6 +482,6 @@ section:after {
 }
 
 /* 
-- Footer
 - Close modal pressing ESC
+- Change blue buttons color
 */
