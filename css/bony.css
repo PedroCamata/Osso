@@ -82,7 +82,7 @@ body {
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
-  padding: 5rem 0;
+  padding-top: 5rem;
 }
 
 
@@ -325,7 +325,7 @@ td:last-child {
 /* Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */ 
 section {
-  padding: 50px 0px;
+  padding: 5rem 0px;
 }
 
 /* Navbar
@@ -345,13 +345,13 @@ section {
   z-index: 1;
 }
 
-.navbar a {
+.link-btn {
   color: black;
   text-decoration: none;
   padding: 0 .5rem;
 }
 
-.navbar a:hover {
+.link-btn:hover {
   color: gray;
 }
 
@@ -362,6 +362,27 @@ section {
 .navbar .left-list {
   float: left;
 }
+
+/* Footer */
+footer {
+  border-top: 1px solid #bbb;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 4rem 0;
+  line-height: 3rem;
+}
+
+footer h6 {
+  margin-bottom: 1rem;
+}
+
+.footer-line {
+  text-align: center;
+  margin: 2rem 0;
+}
+
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -459,27 +480,7 @@ section:after {
   cursor: pointer;
 }
 
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
+/* 
+- Footer
+- Close modal pressing ESC
 */
-
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
