@@ -279,6 +279,7 @@ code {
   background: #F1F1F1;
   border: $border;
   border-radius: 0px;
+  overflow: auto;
 }
 
 pre > code {
@@ -290,6 +291,10 @@ pre > code {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.table-box {
+  overflow: auto;
+}
+
 th,
 td {
   padding: 1.2rem 1.5rem;
