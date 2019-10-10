@@ -20,6 +20,10 @@ $font-stack: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, san
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  margin: 0;
+}
+
 .container, .modal-body {
   position: relative;
   width: 100%;
