@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bony</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bony.css">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Osso</title>
+  <link rel="shortcut icon" type="image/png" href="/images/osso.png" />
 
+  <link rel="stylesheet" href="css/osso.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="navbar fixed row">
     <div class="container">
       <div class="left-list">
-        <a class="link-btn" href="#">logo</a>
+        <a class="link-btn" href="#"><img class="logo" src="images/osso.png" /> Osso</a>
       </div>
       <div class="right-list">
         <a class="link-btn" href="#">Menu</a>
@@ -29,16 +29,15 @@
   <div class="container">
     <section class="center">
       <div class="heading-demo">
-        <h1>This is Bony</h1>
-        <h2>This is Bony</h2>
-        <h3>This is Bony</h3>
-        <h4>This is Bony</h4>
-        <h5>This is Bony</h5>
-        <h6>This is Bony</h6>
+        <h1>This is Osso</h1>
+        <h2>This is Osso</h2>
+        <h3>This is Osso</h3>
+        <h4>This is Osso</h4>
+        <h5>This is Osso</h5>
+        <h6>This is Osso</h6>
+        <img class="logo" src="images/osso.png">
       </div>
     </section>
-
-    <hr>
 
     <section class="center">
       <h2>Grid</h2>
@@ -65,8 +64,6 @@
       </div>
     </section>
 
-    <hr>
-
     <section>
       <div class="center">
         <h2>Panel</h2>
@@ -75,10 +72,17 @@
         <div class="center">
           <h2>Structure around this text</h2>
         </div>
-        <p>This is a panel, allow you to put content inside the theme borders
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Enim neque volutpat ac tincidunt vitae
+          semper quis lectus nulla. Sit amet consectetur adipiscing elit ut. Sed egestas egestas fringilla phasellus
+          faucibus. Tincidunt dui ut ornare lectus sit amet est placerat. Ut ornare lectus sit amet est placerat in
+          egestas.
         </p>
-        <p>Paragraphs have 2.5 rem margin bottom, it's kinda cool to have this bigger margin beetwen the text
-          elements
+        <p>
+          Massa sed elementum tempus egestas. Id nibh tortor id aliquet lectus proin nibh nisl. Quam lacus suspendisse
+          faucibus interdum. Leo vel orci porta non pulvinar neque laoreet suspendisse. Egestas quis ipsum suspendisse
+          ultrices gravida dictum fusce.
         </p>
         Anyway this is optional, you can change whatever you want
       </div>
@@ -95,13 +99,11 @@
       </div>
     </section>
 
-    <hr>
-
     <section>
       <div class="center">
         <h2>Forms</h2>
       </div>
-      <form>
+      <form action="google.com.br">
         <div class="row">
           <div class="col c6">
             <label for="email">Your email</label>
@@ -122,21 +124,21 @@
         </div>
         <div class="col c6">
           <label>
-            <input type="checkbox" name="check-demo" value="1">
+            <input type="checkbox" name="check-demo" value="1" checked>
             <span class="label-body">Checkbox 1</span>
           </label>
           <label>
-            <input type="checkbox" name="check-demo2" value="2">
+            <input type="checkbox" name="check-demo1" value="2">
             <span class="label-body">Checkbox 2</span>
           </label>
           <label>
-            <input type="checkbox" name="check-demo3" value="3">
+            <input type="checkbox" name="check-demo2" value="3">
             <span class="label-body">Checkbox 3</span>
           </label>
         </div>
         <div class="col c6">
           <label>
-            <input type="radio" name="radio-demo" value="1">
+            <input type="radio" name="radio-demo" value="1" checked>
             <span class="label-body">Checkbox 1</span>
           </label>
           <label>
@@ -148,28 +150,34 @@
             <span class="label-body">Checkbox 3</span>
           </label>
         </div>
-        <div class="center">
-          <div>
-            <a class="button" href="#">Button</a>
-            <a class="button button-primary" href="#">Button</a>
-          </div>
-          <div>
-            <button>Button</button>
-            <button class="button-primary">Button</button>
-          </div>
-          <div>
-            <input type="submit" value="Button">
-            <input class="button-primary" type="submit" value="Button">
-          </div>
-          <div>
-            <input type="button" value="Button">
-            <input class="button-primary" type="button" value="Button">
-          </div>
-        </div>
+
       </form>
     </section>
 
-    <hr>
+    <section class="center">
+      <div class="row">
+        <h2>Buttons</h2>
+      </div>
+      <div class="row">
+        <div>
+          <a class="button" href="#">Button</a>
+          <a class="button button-primary" href="#">Button</a>
+        </div>
+        <div>
+          <button>Button</button>
+          <button class="button-primary">Button</button>
+        </div>
+        <div>
+          <input type="submit" value="Button">
+          <input class="button-primary" type="submit" value="Button">
+        </div>
+        <div>
+          <input type="button" value="Button">
+          <input class="button-primary" type="button" value="Button">
+        </div>
+      </div>
+    </section>
+
 
     <section>
       <div class="row">
@@ -209,8 +217,6 @@
       </div>
     </section>
 
-    <hr>
-
     <section>
       <div class="row">
         <h2>Lists</h2>
@@ -245,8 +251,6 @@
       </div>
     </section>
 
-    <hr>
-
     <section>
       <div class="row">
         <h2>Navbar</h2>
@@ -262,8 +266,6 @@
         </div>
       </div>
     </section>
-
-    <hr>
 
     <section>
       <div class="row center">
@@ -287,21 +289,41 @@
             <button class="tab-btn full" tab="fiveth">Fiveth</button>
           </div>
         </div>
-        <div class="col c9 tabs tabGroup">
-          <div class="tab first">
+        <div class="col c9 tabs tabGroup panel" style="height: 300px;">
+          <div class="tab center first">
             This is the first tab
+            <div class="row">
+              <img class="max-full" src="https://picsum.photos/200/200?grayscale">
+            </div>
+            Images from <b><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></b>
           </div>
-          <div class="tab second">
+          <div class="tab center second show">
             This is the second tab
+            <div class="row">
+              <img class="max-full" src="https://picsum.photos/465/325?grayscale">
+            </div>
+            Images from <b><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></b>
           </div>
-          <div class="tab third">
+          <div class="tab center third">
             This is the third tab
+            <div class="row">
+              <img class="max-full" src="https://picsum.photos/300/300?grayscale">
+            </div>
+            Images from <b><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></b>
           </div>
-          <div class="tab fourth">
+          <div class="tab center fourth">
             This is the fourth tab
+            <div class="row">
+              <img class="max-full" src="https://picsum.photos/210/325?grayscale">
+            </div>
+            Images from <b><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></b>
           </div>
-          <div class="tab fiveth">
+          <div class="tab center fiveth">
             This is the fiveth tab
+            <div class="row">
+              <img class="max-full" src="https://picsum.photos/400/310?grayscale">
+            </div>
+            Images from <b><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></b>
           </div>
         </div>
       </div>
@@ -319,8 +341,6 @@
         <a class="button modal-btn" target="uniqueSmallModal">Click to show Small Modal</a>
       </div>
     </section>
-
-    <hr>
 
     <section class="center">
       <div class="row">
@@ -343,9 +363,11 @@
         <h4>Static Image(doesn't change size)</h4>
         <img src="https://picsum.photos/560/300?grayscale">
       </div>
-    </section>
 
-    <hr>
+      <div class="row">
+        Images from <b><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></b>
+      </div>
+    </section>
 
     <section>
       <div class="row">
@@ -363,7 +385,7 @@
     <div class="container">
       <div class="col c10 off-c1 footer-content">
         <div class="col c4">
-          <h6>Interesting Things</h6>
+          <h6>About things</h6>
           <div>
             <a class="link-btn" href="#">About me</a>
           </div>
@@ -387,7 +409,7 @@
           </div>
         </div>
         <div class="col c4">
-          <h6>Interesting Things</h6>
+          <h6>Other Interesting Things</h6>
           <div>
             <a class="link-btn" href="#">Pizza</a>
           </div>
@@ -402,7 +424,7 @@
     </div>
     <div class="row">
       <div class="footer-line">
-        Made by <b>Pedro Camata Andreon</b>
+        Made by <a href="https://github.com/PedroCamata" target="_blank"><b>Pedro Camata Andreon</b></a>
       </div>
     </div>
   </footer>
@@ -439,6 +461,6 @@
 
 </body>
 
-<script src="js/bony.js"></script>
+<script src="js/osso.js"></script>
 
 </html>

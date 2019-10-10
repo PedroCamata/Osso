@@ -1,11 +1,12 @@
+// General borders
+$border: 1px solid #bbb;
+$border-radius: 4px;
+
+// Buttons
 $default-button-text-color: #555;
 $default-button-hover-color: #333;
-
-$border: 1px solid #bbb;
-
 $primary-button-background-color: #333;
 
-$border-radius: 4px;
 $font-stack: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 /*
@@ -44,10 +45,6 @@ $font-stack: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, san
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  .container {
-    width: 85%;
-    padding: 0;
-  }
 
   .col {
     &.c1                    { width: 4.66666666667%; }
@@ -380,11 +377,14 @@ section {
     border-radius: 0;
     margin: 0;
   }
-  
 }
 
 .tab {
   display: none;
+}
+
+.tabs {
+  overflow-y: auto;
 }
 
 /* Footer */
@@ -504,8 +504,3 @@ section:after {
   right: 2rem;
   cursor: pointer;
 }
-
-/* 
-- Close modal pressing ESC
-- Fix checkbox and radio buttons
-*/

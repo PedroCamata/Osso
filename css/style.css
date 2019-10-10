@@ -1,4 +1,7 @@
-/* Grid demo */
+.logo {
+    height: 2rem;
+    margin-top: 1rem;
+}
 
 #grid-demo .panel {
     text-align: center;
@@ -16,4 +19,9 @@
 
 .footer-line {
   background: #eee;
+}
+
+a, a:hover {
+    color: #000;
+    text-decoration: none;
 }
