@@ -114,9 +114,11 @@ h6 { font-size: 1.8rem; line-height: 1.6;  letter-spacing: 0; }
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #1EAEDB;
+  text-decoration: none;
 
   &:hover {
     color: #0FA0CE;
+    text-decoration: underline;
   }
 }
 
@@ -361,6 +363,7 @@ section {
 
   &:hover {
     color: gray;
+    text-decoration: none;
   }
 }
 
