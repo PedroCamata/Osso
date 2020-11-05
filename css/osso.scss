@@ -1,3 +1,6 @@
+// Config
+$dark-mode: true;
+
 // General borders
 $border: 1px solid #bbb;
 $border-radius: 4px;
@@ -5,7 +8,84 @@ $border-radius: 4px;
 // Buttons
 $default-button-text-color: #555;
 $default-button-hover-color: #333;
+
+$primary-button-text-color: #fff;
 $primary-button-background-color: #333;
+$primary-button-hover-background-color: #111;
+
+$link-button-text-color: #000;
+$link-button-hover-text-color: #333;
+
+// Link
+$link-color: #1EAEDB;
+$link-hover-color: #0FA0CE;
+
+// Input
+$input-background-color: #fff;
+$input-hover: #bbb;
+
+// Code
+$code-background-color: #f1f1f1;
+
+// Nav
+$nav-background-color: #fff;
+
+// Modal
+$modal-background-color: #fff;
+$modal-border: none;
+
+// Body
+$body-background-color: transparent;
+$body-text-color: #000;
+
+// Others
+$text-selection-color: inherit;
+
+@if($dark-mode) {
+
+////////////////////////////////////////////////////////////////
+// DARK MODE
+// General borders
+$border: 1px solid #444;
+$border-radius: 4px;
+
+// Buttons
+$default-button-text-color: #aaa;
+$default-button-hover-color: #ccc;
+
+$primary-button-text-color: #000;
+$primary-button-background-color: #ccc;
+$primary-button-hover-background-color: #eee;
+
+$link-button-text-color: #fff;
+$link-button-hover-text-color: #ccc;
+
+// Link
+$link-color: #1EAEDB;
+$link-hover-color: #0FA0CE;
+
+// Input
+$input-background-color: #000;
+$input-hover: #444;
+
+// Code
+$code-background-color: #0e0e0e;
+
+// Nav
+$nav-background-color: #000;
+
+// Modal
+$modal-background-color: #000;
+$modal-border: 1px solid #fff;
+
+// Body
+$body-background-color: #000;
+$body-text-color: #fff;
+
+// General
+$text-selection-color: #333;
+
+}
 
 $font-stack: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -20,7 +100,15 @@ $font-stack: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, san
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@if($dark-mode) {
+  *::selection {
+      background: $text-selection-color;
+  }
+}
+
 body {
+  background-color: $body-background-color;
+  color: $body-text-color;
   margin: 0;
 }
 
@@ -113,11 +201,11 @@ h6 { font-size: 1.8rem; line-height: 1.6;  letter-spacing: 0; }
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB;
+  color: $link-color;
   text-decoration: none;
 
   &:hover {
-    color: #0FA0CE;
+    color: $link-hover-color;
     text-decoration: underline;
   }
 }
@@ -158,14 +246,14 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
+  color: $primary-button-text-color;
   background-color: $primary-button-background-color;
   border-color: $primary-button-background-color;
 
   &:hover, &:focus {
-    color: #FFF;
-    background-color: #111;
-    border-color: #111;
+    color: $primary-button-text-color;
+    background-color: $primary-button-hover-background-color;
+    border-color: $primary-button-hover-background-color;
   }
 }
 
@@ -182,7 +270,8 @@ textarea,
 select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
+  background-color: $input-background-color;
+  color: $body-text-color;
   border: $border;
   border-radius: $border-radius;
   box-shadow: none;
@@ -217,7 +306,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid $input-hover;
   outline: 0;
 }
 
@@ -278,7 +367,7 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #F1F1F1;
+  background: $code-background-color;
   border: $border;
   border-radius: 0px;
   overflow: auto;
@@ -342,7 +431,7 @@ section {
 
 .navbar {
   &.row {
-    background: #fff;
+    background: $nav-background-color;
     border-bottom: $border;
     min-height: 5rem;
     line-height: 5rem;
@@ -357,12 +446,12 @@ section {
 }
 
 .link-btn {
-  color: black;
+  color: $link-button-text-color;
   text-decoration: none;
   padding: 0 .5rem;
 
   &:hover {
-    color: gray;
+    color: $link-button-hover-text-color;
     text-decoration: none;
   }
 }
@@ -503,7 +592,8 @@ section:after {
   margin: 4% auto;
   padding: 3rem 3rem;
   width: 98%;
-  background: #fff;
+  background: $modal-background-color;
+  border: $modal-border;
   
   &.small {
     max-width: 400px;

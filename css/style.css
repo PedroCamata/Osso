@@ -10,7 +10,7 @@
 }
 
 #grid-demo .panel:nth-child(odd) {
-    background: #F3F3F3;
+    background: #888;
 }
 
 #panel-tags {
@@ -19,4 +19,5 @@
 
 .footer-line {
   background: #eee;
+  color: #000;
 }
