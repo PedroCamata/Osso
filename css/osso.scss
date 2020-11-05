@@ -82,7 +82,7 @@ $modal-border: 1px solid #fff;
 $body-background-color: #000;
 $body-text-color: #fff;
 
-// General
+// Others
 $text-selection-color: #333;
 
 }
@@ -418,6 +418,11 @@ td {
     width: 98%;
     margin: 0.25rem 1%;
   }
+}
+
+// Card
+.card-text {
+  padding: 1.5rem;
 }
 
 /* Section

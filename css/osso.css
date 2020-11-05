@@ -407,6 +407,10 @@ td:last-child {
   margin: 0.25rem 1%;
 }
 
+.card-text {
+  padding: 1.5rem;
+}
+
 /* Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 section {
