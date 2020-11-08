@@ -90,7 +90,7 @@ $text-selection-color: #333;
 $font-stack: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 /*
-* Bony V0
+* Osso V0
 * Copyright 2019, Pedro Camata Andreon
 * Inspired by www.getskeleton.com
 * Free to use under the MIT license.
@@ -405,7 +405,6 @@ td {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */ 
 .panel {
   display: inline-block;
-  background-color: transparent;
   border-radius: 0px;
   border: $border;
   box-sizing: border-box;
@@ -421,6 +420,17 @@ td {
 }
 
 // Card
+.card {
+  display: inline-block;
+  border-radius: 0px;
+  border: $border;
+  box-sizing: border-box;
+}
+
+.no-border {
+  border: none;
+}
+
 .card-text {
   padding: 1.5rem;
 }

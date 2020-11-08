@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-* Bony V0
+* Osso V0
 * Copyright 2019, Pedro Camata Andreon
 * Inspired by www.getskeleton.com
 * Free to use under the MIT license.
@@ -393,7 +393,6 @@ td:last-child {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .panel {
   display: inline-block;
-  background-color: transparent;
   border-radius: 0px;
   border: 1px solid #444;
   box-sizing: border-box;
@@ -405,6 +404,17 @@ td:last-child {
   padding: 3rem 4.5rem;
   width: 98%;
   margin: 0.25rem 1%;
+}
+
+.card {
+  display: inline-block;
+  border-radius: 0px;
+  border: 1px solid #444;
+  box-sizing: border-box;
+}
+
+.no-border {
+  border: none;
 }
 
 .card-text {

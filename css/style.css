@@ -10,7 +10,7 @@
 }
 
 #grid-demo .panel:nth-child(odd) {
-    background: #888;
+    background: #333;
 }
 
 #panel-tags {
