@@ -11,6 +11,7 @@
 
 #grid-demo .panel:nth-child(odd) {
     background: #333;
+    color: #fff;
 }
 
 #panel-tags {
