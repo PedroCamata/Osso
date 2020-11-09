@@ -266,6 +266,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="date"],
 textarea,
 select {
   height: 38px;
@@ -275,7 +276,9 @@ select {
   border: $border;
   border-radius: $border-radius;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: inherit;
+}
 
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
@@ -285,6 +288,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="date"],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -304,6 +308,7 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
+input[type="date"]:focus,
 textarea:focus,
 select:focus {
   border: 1px solid $input-hover;
@@ -558,6 +563,21 @@ form {
 }
 .center {
   text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.p1 {
+  padding: 1rem;
+}
+.p2 {
+  padding: 2rem;
+}
+.p3 {
+  padding: 3rem;
 }
 
 
