@@ -42,33 +42,33 @@
     <section class="center">
       <h2>Grid</h2>
       <div id="grid-demo">
-        <div class="col c12 panel">c12</div>
+        <div class="col c12 card p05">c12</div>
 
-        <div class="col c1 panel">c1</div>
-        <div class="col c11 panel">c11</div>
+        <div class="col c1 card p05">c1</div>
+        <div class="col c11 card p05">c11</div>
 
-        <div class="col c2 panel">c2</div>
-        <div class="col c10 panel">c10</div>
+        <div class="col c2 card p05">c2</div>
+        <div class="col c10 card p05">c10</div>
 
-        <div class="col c3 panel">c3</div>
-        <div class="col c9 panel">c9</div>
+        <div class="col c3 card p05">c3</div>
+        <div class="col c9 card p05">c9</div>
 
-        <div class="col c4 panel">c4</div>
-        <div class="col c8 panel">c8</div>
+        <div class="col c4 card p05">c4</div>
+        <div class="col c8 card p05">c8</div>
 
-        <div class="col c5 panel">c5</div>
-        <div class="col c7 panel">c7</div>
+        <div class="col c5 card p05">c5</div>
+        <div class="col c7 card p05">c7</div>
 
-        <div class="col c6 panel">c6</div>
-        <div class="col c6 panel">c6</div>
+        <div class="col c6 card p05">c6</div>
+        <div class="col c6 card p05">c6</div>
       </div>
     </section>
 
     <section>
       <div class="center">
-        <h2>Panel</h2>
+        <h2>Card</h2>
       </div>
-      <div class="panel big">
+      <div class="card big">
         <div class="center">
           <h2>Structure around this text</h2>
         </div>
@@ -86,14 +86,14 @@
         </p>
         Anyway this is optional, you can change whatever you want
       </div>
-      <div id="panel-tags" class="col">
-        <div class="panel">
+      <div id="card-tags" class="col">
+        <div class="card p05">
           Our just use it at any size
         </div>
-        <div class="panel">
+        <div class="card p05">
           It's cool to use as a tag or badge
         </div>
-        <div class="panel">
+        <div class="card p05">
           #hardcore
         </div>
       </div>
@@ -132,7 +132,6 @@
           </div>
         </div>
       </div>
-      
     </section>
 
     <section>
@@ -166,6 +165,47 @@
           <div class="center">
             <button class="button-primary">Next</button>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="center">
+        <h2>Card Columns</h2>
+      </div>
+      <div class="row">
+        <div class="col c3 card-list-column">
+          <img class="card max-full" src="https://picsum.photos/seed/minicard1/600/600?grayscale">
+          <div class="card p3">
+            <h4>Random Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <img class="card max-full" src="https://picsum.photos/seed/minicard2/600/600?grayscale">
+          <img class="card max-full" src="https://picsum.photos/seed/minicard3/600/600?grayscale">
+        </div>
+        <div class="col c3 card-list-column">
+          <img class="card max-full" src="https://picsum.photos/seed/minicard4/600/600?grayscale">
+          <img class="card max-full" src="https://picsum.photos/seed/minicard5/600/600?grayscale">
+          <img class="card max-full" src="https://picsum.photos/seed/minicard6/600/600?grayscale">
+          <img class="card max-full" src="https://picsum.photos/seed/minicard7/600/600?grayscale">
+        </div>
+        <div class="col c3 card-list-column">
+          <div class="card p3">
+            <h4>Different Title</h4>
+            <a href="#">Click here to go to an amazing site</a>
+          </div>
+          <img class="card max-full" src="https://picsum.photos/seed/minicard8/600/600?grayscale">
+          <img class="card max-full" src="https://picsum.photos/seed/minicard9/600/600?grayscale">
+          <img class="card max-full" src="https://picsum.photos/seed/minicard10/600/600?grayscale">
+        </div>
+        <div class="col c3 card-list-column">
+          <img class="card max-full" src="https://picsum.photos/seed/minicard11/600/600?grayscale">
+          <img class="card max-full" src="https://picsum.photos/seed/minicard12/600/600?grayscale">
+          <div class="card p3">
+            <h4>Test this new feature</h4>
+            <button>Click</button>
+          </div>
+          <img class="card max-full" src="https://picsum.photos/seed/minicard13/600/600?grayscale">
         </div>
       </div>
     </section>
@@ -226,7 +266,7 @@
 
     <section>
       <div class="row center">
-        <form class="col c6 off-c3 panel p3">
+        <form class="col c6 off-c3 card p3">
           <h2>Login</h2>
           <div class="row">
             <label class="left" for="email">Email</label>
@@ -242,15 +282,15 @@
               <span class="label-body">Remember-me</span>
             </label>
           </div>
-          <input class="full" type="submit" value="Login">
-          <input class="full button-primary" type="button" value="Register">
+          <input class="full button-primary" type="submit" value="Login">
+          <input class="full" type="button" value="Register">
         </form>
       </div>
     </section>
 
     <section>
       <div class="row center">
-        <form class="col c6 off-c3 panel p3">
+        <form class="col c6 off-c3 card p3">
           <h2>Register</h2>
           <div class="row">
             <label class="left" for="name">Name</label>
@@ -274,8 +314,8 @@
               <input class="full" type="password" placeholder="********" id="cpassword" required>
             </div>
           </div>
-          <input class="full" type="submit" value="Register">
-          <input class="full button-primary" type="button" value="Login">
+          <input class="full button-primary" type="submit" value="Register">
+          <input class="full" type="button" value="Login">
         </form>
       </div>
     </section>
@@ -400,7 +440,7 @@
         <h2>Side menu & Tabs</h2>
       </div>
       <div class="row">
-        <div class="col c3 panel sidemenu tabmenu" tab-group="tabGroup">
+        <div class="col c3 card sidemenu tabmenu" tab-group="tabGroup">
           <div>
             <button class="tab-btn full" tab="first">First</button>
           </div>
@@ -417,7 +457,7 @@
             <button class="tab-btn full" tab="fiveth">Fiveth</button>
           </div>
         </div>
-        <div class="col c9 tabs tabGroup panel" style="height: 300px;">
+        <div class="col c9 tabs tabGroup card" style="height: 300px;">
           <div class="tab center first">
             This is the first tab
             <div class="row">

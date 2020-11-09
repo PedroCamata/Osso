@@ -9,9 +9,13 @@
 */
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+*::selection {
+  background: #333;
+}
+
 body {
-  background-color: transparent;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   margin: 0;
 }
 
@@ -189,7 +193,7 @@ input[type=button] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: #aaa;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -199,7 +203,7 @@ input[type=button] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid #444;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -212,8 +216,8 @@ input[type=reset]:hover,
 input[type=reset]:focus,
 input[type=button]:hover,
 input[type=button]:focus {
-  color: #333;
-  border-color: #333;
+  color: #ccc;
+  border-color: #ccc;
   outline: 0;
 }
 
@@ -222,9 +226,9 @@ button.button-primary,
 input[type=submit].button-primary,
 input[type=reset].button-primary,
 input[type=button].button-primary {
-  color: #fff;
-  background-color: #333;
-  border-color: #333;
+  color: #000;
+  background-color: #ccc;
+  border-color: #ccc;
 }
 .button.button-primary:hover, .button.button-primary:focus,
 button.button-primary:hover,
@@ -235,9 +239,9 @@ input[type=reset].button-primary:hover,
 input[type=reset].button-primary:focus,
 input[type=button].button-primary:hover,
 input[type=button].button-primary:focus {
-  color: #fff;
-  background-color: #111;
-  border-color: #111;
+  color: #000;
+  background-color: #eee;
+  border-color: #eee;
 }
 
 /* Forms
@@ -255,9 +259,9 @@ select {
   height: 38px;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #bbb;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #444;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
@@ -295,7 +299,7 @@ input[type=password]:focus,
 input[type=date]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #bbb;
+  border: 1px solid #444;
   outline: 0;
 }
 
@@ -356,8 +360,8 @@ code {
   margin: 0 0.2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #bbb;
+  background: #0e0e0e;
+  border: 1px solid #444;
   border-radius: 0px;
   overflow: auto;
 }
@@ -378,7 +382,7 @@ th,
 td {
   padding: 1.2rem 1.5rem;
   text-align: left;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #444;
 }
 th:first-child,
 td:first-child {
@@ -389,32 +393,23 @@ td:last-child {
   padding-right: 0;
 }
 
-/* Panel
+/* Card
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.panel {
+.card {
   display: inline-block;
   border-radius: 0px;
-  border: 1px solid #bbb;
+  border: 1px solid #444;
   box-sizing: border-box;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
 }
-.panel.big {
+.card.big {
   display: block;
   padding: 3rem 4.5rem;
   width: 98%;
   margin: 0.25rem 1%;
 }
 
-.card {
-  display: inline-block;
-  border-radius: 0px;
-  border: 1px solid #bbb;
-  box-sizing: border-box;
-}
-
-.no-border {
-  border: none;
+.card-list-column .card {
+  margin: 0 0 1rem 0;
 }
 
 .card-text {
@@ -430,8 +425,8 @@ section {
 /* Navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .navbar.row {
-  background: #fff;
-  border-bottom: 1px solid #bbb;
+  background: #000;
+  border-bottom: 1px solid #444;
   min-height: 5rem;
   line-height: 5rem;
 }
@@ -443,12 +438,12 @@ section {
 }
 
 .link-btn {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   padding: 0 0.5rem;
 }
 .link-btn:hover {
-  color: #333;
+  color: #ccc;
   text-decoration: none;
 }
 
@@ -478,7 +473,7 @@ section {
 
 /* Footer */
 footer {
-  border-top: 1px solid #bbb;
+  border-top: 1px solid #444;
 }
 
 .footer-content {
@@ -541,6 +536,10 @@ form {
   text-align: right;
 }
 
+.p05 {
+  padding: 0.5rem;
+}
+
 .p1 {
   padding: 1rem;
 }
@@ -553,13 +552,17 @@ form {
   padding: 3rem;
 }
 
+.no-border {
+  border: none;
+}
+
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #bbb;
+  border-top: 1px solid #444;
 }
 
 img.zoomable {
@@ -598,8 +601,8 @@ section:after {
   margin: 4% auto;
   padding: 3rem 3rem;
   width: 98%;
-  background: #fff;
-  border: none;
+  background: #000;
+  border: 1px solid #fff;
 }
 .modal-body.small {
   max-width: 400px;

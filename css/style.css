@@ -3,18 +3,18 @@
     margin-top: 1rem;
 }
 
-#grid-demo .panel {
+#grid-demo .card {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-#grid-demo .panel:nth-child(odd) {
+#grid-demo .card:nth-child(odd) {
     background: #333;
     color: #fff;
 }
 
-#panel-tags {
+#card-tags {
     margin-top: 10px;
 }
 

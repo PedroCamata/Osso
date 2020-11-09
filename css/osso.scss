@@ -406,15 +406,13 @@ td {
   }
 }
 
-/* Panel
+/* Card
 –––––––––––––––––––––––––––––––––––––––––––––––––– */ 
-.panel {
+.card {
   display: inline-block;
   border-radius: 0px;
   border: $border;
   box-sizing: border-box;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
 
   &.big {
     display: block;
@@ -424,16 +422,8 @@ td {
   }
 }
 
-// Card
-.card {
-  display: inline-block;
-  border-radius: 0px;
-  border: $border;
-  box-sizing: border-box;
-}
-
-.no-border {
-  border: none;
+.card-list-column .card {
+  margin: 0 0 1rem 0;
 }
 
 .card-text {
@@ -570,14 +560,24 @@ form {
 .right {
   text-align: right;
 }
+
+.p05 {
+  padding: 0.5rem;
+}
+//
 .p1 {
   padding: 1rem;
 }
 .p2 {
   padding: 2rem;
 }
+//
 .p3 {
   padding: 3rem;
+}
+
+.no-border {
+  border: none;
 }
 
 
