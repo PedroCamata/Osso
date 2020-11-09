@@ -18,6 +18,10 @@
     margin-top: 10px;
 }
 
+#alert-list > * {
+    margin-top: 10px;
+}
+
 .footer-line {
   background: #eee;
   color: #000;

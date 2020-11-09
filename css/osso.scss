@@ -641,3 +641,54 @@ section:after {
   right: 2rem;
   cursor: pointer;
 }
+
+/* Alert */
+.alert {
+  border-radius: 0px;
+  border: $border;
+  box-sizing: border-box;
+  padding: 1rem;
+
+  
+
+  .alert-close {
+    float: right;
+    cursor: pointer;
+    margin: 0 0.5rem 0 0;
+    padding: 0 0.7rem;
+  }
+}
+
+@if($dark-mode) {
+  .bg-error {
+    background-color: #140001 
+  }
+  
+  .bg-warning {
+    background-color: #141000;
+  }
+  
+  .bg-success {
+    background-color: #001405;
+  }
+  
+  .bg-info {
+    background-color: #001114;
+  }
+} @else {
+  .bg-error {
+    background-color: #FFF0F1 
+  }
+  
+  .bg-warning {
+    background-color: #FFFBEE;
+  }
+  
+  .bg-success {
+    background-color: #EAFFEF;
+  }
+  
+  .bg-info {
+    background-color: #EAFCFF;
+  }
+}
