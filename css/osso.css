@@ -621,8 +621,10 @@ section:after {
   border: 1px solid #444;
   box-sizing: border-box;
   padding: 1rem;
+  animation: fadeIn 0.3s linear forwards;
 }
-.alert .alert-close {
+
+.alert-close {
   float: right;
   cursor: pointer;
   margin: 0 0.5rem 0 0;
@@ -643,6 +645,17 @@ section:after {
 
 .bg-info {
   background-color: #001114;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=osso.css.map */

@@ -648,17 +648,16 @@ section:after {
   border: $border;
   box-sizing: border-box;
   padding: 1rem;
-
-  
-
-  .alert-close {
-    float: right;
-    cursor: pointer;
-    margin: 0 0.5rem 0 0;
-    padding: 0 0.7rem;
-  }
 }
 
+.alert-close {
+  float: right;
+  cursor: pointer;
+  margin: 0 0.5rem 0 0;
+  padding: 0 0.7rem;
+}
+
+// Background colors
 @if($dark-mode) {
   .bg-error {
     background-color: #140001 

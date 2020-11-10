@@ -20,10 +20,8 @@ document.addEventListener('click', function (event) {
             }
 
             if (i.classList.contains('show')) {
-                // hide
                 i.classList.remove('show');
             } else if (validId) {
-                // show
                 i.classList.add('show');
             }
         }
@@ -61,5 +59,9 @@ document.addEventListener('click', function (event) {
                 b.classList.add('button-primary');
             }
         }
+    } else if (event.target.matches('.alert-close')) {
+        var elem = event.target;
+        var parent = elem.parentElement;
+        parent.remove();
     }
 }, false);
