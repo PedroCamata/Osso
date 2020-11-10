@@ -416,7 +416,6 @@ td {
 
   &.big {
     display: block;
-    padding: 3rem 4.5rem;
     width: 98%;
     margin: 0.25rem 1%;
   }
@@ -428,6 +427,13 @@ td {
 
 .card-text {
   padding: 1.5rem;
+}
+
+.card-close {
+  float: right;
+  cursor: pointer;
+  margin: 0 0.5rem 0 0;
+  padding: 0 0.7rem;
 }
 
 /* Section
@@ -640,21 +646,6 @@ section:after {
   top: 1rem;
   right: 2rem;
   cursor: pointer;
-}
-
-/* Alert */
-.alert {
-  border-radius: 0px;
-  border: $border;
-  box-sizing: border-box;
-  padding: 1rem;
-}
-
-.alert-close {
-  float: right;
-  cursor: pointer;
-  margin: 0 0.5rem 0 0;
-  padding: 0 0.7rem;
 }
 
 // Background colors

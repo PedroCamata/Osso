@@ -59,7 +59,7 @@ document.addEventListener('click', function (event) {
                 b.classList.add('button-primary');
             }
         }
-    } else if (event.target.matches('.alert-close')) {
+    } else if (event.target.matches('.card-close')) {
         var elem = event.target;
         var parent = elem.parentElement;
         parent.remove();

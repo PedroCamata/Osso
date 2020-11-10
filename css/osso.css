@@ -403,7 +403,6 @@ td:last-child {
 }
 .card.big {
   display: block;
-  padding: 3rem 4.5rem;
   width: 98%;
   margin: 0.25rem 1%;
 }
@@ -414,6 +413,13 @@ td:last-child {
 
 .card-text {
   padding: 1.5rem;
+}
+
+.card-close {
+  float: right;
+  cursor: pointer;
+  margin: 0 0.5rem 0 0;
+  padding: 0 0.7rem;
 }
 
 /* Section
@@ -615,22 +621,6 @@ section:after {
   cursor: pointer;
 }
 
-/* Alert */
-.alert {
-  border-radius: 0px;
-  border: 1px solid #444;
-  box-sizing: border-box;
-  padding: 1rem;
-  animation: fadeIn 0.3s linear forwards;
-}
-
-.alert-close {
-  float: right;
-  cursor: pointer;
-  margin: 0 0.5rem 0 0;
-  padding: 0 0.7rem;
-}
-
 .bg-error {
   background-color: #140001;
 }
@@ -645,17 +635,6 @@ section:after {
 
 .bg-info {
   background-color: #001114;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /*# sourceMappingURL=osso.css.map */
