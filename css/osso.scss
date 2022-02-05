@@ -1,5 +1,16 @@
+/*
+* Osso v0.1
+* Made by Pedro Camata Andreon
+* Inspired by www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 03/09/2019
+*/
+
 // Config
 $dark-mode: true;
+
+$baseColor: #fff;
 
 // General borders
 $border: 1px solid #bbb;
@@ -9,7 +20,7 @@ $border-radius: 4px;
 $default-button-text-color: #555;
 $default-button-hover-color: #333;
 
-$primary-button-text-color: #fff;
+$primary-button-text-color: $baseColor;
 $primary-button-background-color: #333;
 $primary-button-hover-background-color: #111;
 
@@ -21,95 +32,73 @@ $link-color: #1EAEDB;
 $link-hover-color: #0FA0CE;
 
 // Input
-$input-background-color: #fff;
+$input-background-color: $baseColor;
 $input-hover: #bbb;
 
 // Code
 $code-background-color: #f1f1f1;
 
 // Nav
-$nav-background-color: #fff;
+$nav-background-color: $baseColor;
 
 // Modal
-$modal-background-color: #fff;
-$modal-border: none;
+$modal-background-color: $baseColor;
 
 // Body
 $body-background-color: transparent;
 $body-text-color: #000;
 
 // Others
-$text-selection-color: inherit;
-
-@if($dark-mode) {
-
-////////////////////////////////////////////////////////////////
-// DARK MODE
-// General borders
-$border: 1px solid #444;
-$border-radius: 4px;
-
-// Buttons
-$default-button-text-color: #aaa;
-$default-button-hover-color: #ccc;
-
-$primary-button-text-color: #000;
-$primary-button-background-color: #ccc;
-$primary-button-hover-background-color: #eee;
-
-$link-button-text-color: #fff;
-$link-button-hover-text-color: #ccc;
-
-// Link
-$link-color: #1EAEDB;
-$link-hover-color: #0FA0CE;
-
-// Input
-$input-background-color: #000;
-$input-hover: #444;
-
-// Code
-$code-background-color: #0e0e0e;
-
-// Nav
-$nav-background-color: #000;
-
-// Modal
-$modal-background-color: #000;
-$modal-border: 1px solid #fff;
-
-// Body
-$body-background-color: #000;
-$body-text-color: #fff;
-
-// Others
 $text-selection-color: #333;
 
-}
-
-$font-stack: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-/*
-* Osso V0
-* Copyright 2019, Pedro Camata Andreon
-* Inspired by www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 03/09/2019
-*/
-
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @if($dark-mode) {
-  *::selection {
-      background: $text-selection-color;
-  }
+  $baseColor: #111;
+
+  // General borders
+  $border: 1px solid #444;
+  $border-radius: 4px;
+
+  // Buttons
+  $default-button-text-color: #aaa;
+  $default-button-hover-color: #ccc;
+
+  $primary-button-text-color: $baseColor;
+  $primary-button-background-color: #ccc;
+  $primary-button-hover-background-color: #eee;
+
+  $link-button-text-color: #fff;
+  $link-button-hover-text-color: #ccc;
+
+  // Link
+  $link-color: #1EAEDB;
+  $link-hover-color: #0FA0CE;
+
+  // Input
+  $input-background-color: $baseColor;
+  $input-hover: #444;
+
+  // Code
+  $code-background-color: #222;
+
+  // Nav
+  $nav-background-color: $baseColor;
+
+  // Modal
+  $modal-background-color: $baseColor;
+
+  // Body
+  $body-background-color: $baseColor;
+  $body-text-color: #fff;
 }
+
+// $font-stack: monospace;
+$font-stack:  "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 body {
   background-color: $body-background-color;
   color: $body-text-color;
   margin: 0;
+  padding: 0;
 }
 
 .container, .modal-body {
@@ -121,18 +110,17 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  width: 85%;
+  padding: 0;
+}
+
 .col {
   width: 98%;
   float: left;
   box-sizing: border-box;
   margin: 0 1% 0 1%;
 }
-
-/* For devices larger than 400px */
-  .container {
-    width: 85%;
-    padding: 0;
-  }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
@@ -166,15 +154,15 @@ body {
 }
 
 
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
+// Base Styles
+/*
+  HTML is set to 62.5% so that all the REM measurements throughout Osso
+  are based on 10px sizing. So basically 1.5rem = 15px
+*/
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.5rem;
   line-height: 1.6;
   font-weight: 400;
   font-family: $font-stack;
@@ -182,24 +170,22 @@ body {
 }
 
 
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Typography
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 2rem 0;
   font-weight: 300;
   letter-spacing: -.1rem;
 }
 
-h1 { font-size: 4.0rem; line-height: 1.2;  }
-h2 { font-size: 3.6rem; line-height: 1.25; }
-h3 { font-size: 3.0rem; line-height: 1.3; }
-h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
-h5 { font-size: 2rem; line-height: 1.5;  letter-spacing: -.05rem; }
-h6 { font-size: 1.8rem; line-height: 1.6;  letter-spacing: 0; }
+h1 { font-size: 4.0rem; }
+h2 { font-size: 3.6rem; }
+h3 { font-size: 3.0rem; }
+h4 { font-size: 2.4rem; }
+h5 { font-size: 2rem;   }
+h6 { font-size: 1.8rem; }
 
 
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Links
 a {
   color: $link-color;
   text-decoration: none;
@@ -210,22 +196,20 @@ a {
   }
 }
 
-/* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Buttons
 .button,
 button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 38px;
-  padding: 0 30px;
+  height: 3.8rem;
+  padding: 0 3rem;
   color: $default-button-text-color;
   text-align: center;
-  font-size: 11px;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 38px;
-  letter-spacing: .1rem;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
@@ -233,19 +217,21 @@ input[type="button"] {
   border: $border;
   cursor: pointer;
   box-sizing: border-box;
+  font-family: $font-stack;
 
   &:hover, &:focus {
     color: $default-button-hover-color;
     border-color: $default-button-hover-color;
     outline: 0;
+    text-decoration: none;
   }
 }
 
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
+.button.primary,
+button.primary,
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary {
   color: $primary-button-text-color;
   background-color: $primary-button-background-color;
   border-color: $primary-button-background-color;
@@ -257,8 +243,7 @@ input[type="button"].button-primary {
   }
 }
 
-/* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Forms
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -269,36 +254,21 @@ input[type="password"],
 input[type="date"],
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  height: 3.8rem;
+  padding: 0 1rem;
   background-color: $input-background-color;
   color: $body-text-color;
   border: $border;
   border-radius: $border-radius;
   box-shadow: none;
   box-sizing: border-box;
-  font-family: inherit;
-}
-
-/* Removes awkward default styles on some inputs for iOS */
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-input[type="date"],
-textarea {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  font-family: $font-stack;
 }
 
 textarea {
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  min-height: 6.5rem;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
 }
 
 input[type="email"]:focus,
@@ -339,8 +309,7 @@ label > .label-body {
 }
 
 
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Lists
 ul {
   list-style: circle inside;
 }
@@ -365,8 +334,7 @@ li {
 }
 
 
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Code
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -385,8 +353,7 @@ pre > code {
 }
 
 
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Tables
 .table-box {
   overflow: auto;
 }
@@ -406,8 +373,7 @@ td {
   }
 }
 
-/* Card
-–––––––––––––––––––––––––––––––––––––––––––––––––– */ 
+// Card
 .card {
   display: inline-block;
   border-radius: 0px;
@@ -421,7 +387,7 @@ td {
   }
 }
 
-.card-list-column .card {
+.card-list .card {
   margin: 0 0 1rem 0;
 }
 
@@ -432,19 +398,16 @@ td {
 .card-close {
   float: right;
   cursor: pointer;
-  margin: 0 0.5rem 0 0;
-  padding: 0 0.7rem;
+  width: 2.5rem;
+  text-align: center;
 }
 
-/* Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– */ 
+// Section
 section {
   padding: 5rem 0px;
 }
 
-/* Navbar
-–––––––––––––––––––––––––––––––––––––––––––––––––– */ 
-
+//Navbar
 .navbar {
   &.row {
     background: $nav-background-color;
@@ -503,7 +466,7 @@ section {
   overflow-y: auto;
 }
 
-/* Footer */
+// Footer
 footer {
   border-top: $border;
 }
@@ -525,8 +488,7 @@ footer {
 }
 
 
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Spacing
 button,
 .button,
 input,
@@ -546,49 +508,7 @@ form {
   border-spacing: 0
 }
 
-
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.full {
-  width: 100%;
-  box-sizing: border-box;
-}
-.max-full {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-.center {
-  text-align: center;
-}
-.left {
-  text-align: left;
-}
-.right {
-  text-align: right;
-}
-
-.p05 {
-  padding: 0.5rem;
-}
-//
-.p1 {
-  padding: 1rem;
-}
-.p2 {
-  padding: 2rem;
-}
-//
-.p3 {
-  padding: 3rem;
-}
-
-.no-border {
-  border: none;
-}
-
-
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Misc
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -600,10 +520,12 @@ img.zoomable {
   cursor: pointer;
 }
 
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+*::selection {
+  background: $text-selection-color;
+  color: #ccc
+}
 
-/* Self Clearing Goodness */
+// Clearing
 .container:after,
 .row:after,
 section:after {
@@ -612,7 +534,7 @@ section:after {
   clear: both;
 }
 
-/* Modal */
+// Modal
 .modal {
   position: fixed;
   top: 0;
@@ -634,7 +556,7 @@ section:after {
   padding: 3rem 3rem;
   width: 98%;
   background: $modal-background-color;
-  border: $modal-border;
+  border: $border;
   
   &.small {
     max-width: 400px;
@@ -643,9 +565,25 @@ section:after {
 
 .modal-close {
   position: absolute;
-  top: 1rem;
-  right: 2rem;
+  top: 0rem;
+  right: 0rem;
   cursor: pointer;
+  color: #f00;
+  font-weight: 600;
+  width: 4rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.message-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  & .card {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 // Background colors
@@ -681,4 +619,52 @@ section:after {
   .bg-info {
     background-color: #EAFCFF;
   }
+}
+
+// Utilities ------------------------
+// Sizes
+.full {
+  width: 100%;
+  box-sizing: border-box;
+}
+.max-full {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.fill-space {
+  width: 100%;
+  height: 100%;
+}
+
+// Align
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+
+// Padding
+.p05 {
+  padding: 0.5rem;
+}
+.p1 {
+  padding: 1rem;
+}
+.p2 {
+  padding: 2rem;
+}
+.p3 {
+  padding: 3rem;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.no-border {
+  border: none;
 }

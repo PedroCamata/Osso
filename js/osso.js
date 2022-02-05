@@ -1,5 +1,6 @@
-// Modal
-document.addEventListener('click', function (event) {
+"use strict";
+
+document.addEventListener('click', (event) => {
     if (event.target.matches('.modal-btn')
         || event.target.matches('.modal')) {
 
@@ -61,7 +62,10 @@ document.addEventListener('click', function (event) {
         }
     } else if (event.target.matches('.card-close')) {
         var elem = event.target;
-        var parent = elem.parentElement;
-        parent.remove();
+        var card = elem.closest('.card');
+        if (card == null) {
+            elem.parentElement().remove();
+        }
+        card.remove();
     }
 }, false);
