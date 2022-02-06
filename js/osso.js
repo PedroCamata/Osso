@@ -55,9 +55,9 @@ document.addEventListener('click', (event) => {
         }
 
         for (const b of document.getElementsByClassName("tab-btn")) {
-            b.classList.remove('button-primary');
+            b.classList.remove('primary');
             if (b.getAttribute('tab') == btn.getAttribute('tab')) {
-                b.classList.add('button-primary');
+                b.classList.add('primary');
             }
         }
     } else if (event.target.matches('.card-close')) {
