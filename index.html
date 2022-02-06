@@ -44,7 +44,7 @@
         <h4>This is Osso</h4>
         <h5>This is Osso</h5>
         <h6>This is Osso</h6>
-        <img class="logo" src="images/osso.png">
+        <img style="height: 5rem" src="images/osso.png">
       </div>
     </section>
 
@@ -411,7 +411,10 @@
       </div>
       <div class="navbar row">
         <div class="left-list">
-          <a class="link-btn" href="#">logo</a>
+          <a class="link-btn" href="#">
+            <img class="logo" src="https://picsum.photos/123/123?grayscale" />
+            logo
+          </a>
         </div>
         <div class="right-list">
           <a class="link-btn" href="#">Menu</a>
@@ -443,7 +446,7 @@
             <button class="tab-btn full" tab="fifth">fifth</button>
           </div>
         </div>
-        <div class="col c9 tabs tabGroup card" style="height: 300px;">
+        <div class="col c9 tabs tabGroup card" style="height: 400px;">
           <div class="tab center first">
             This is the first tab
             <div class="row">
@@ -490,11 +493,14 @@
         <h2>Modal</h2>
       </div>
       <div class="row">
-        <a class="button modal-btn" target="fullPageModal">Click to show full page Modal</a>
-        <br />
-        <a class="button modal-btn" target="uniqueModal">Click to show big Modal</a>
-        <br />
-        <a class="button modal-btn" target="uniqueSmallModal">Click to show Small Modal</a>
+        <div class="col c4 off-c4">
+          <a class="button modal-btn full" target="fullPageModal">Click to show full page Modal</a>
+          <br />
+          <a class="button modal-btn full" target="uniqueModal">Click to show big Modal</a>
+          <br />
+          <a class="button modal-btn full" target="uniqueSmallModal">Click to show Small Modal</a>
+        </div>
+
       </div>
     </section>
 
@@ -550,7 +556,6 @@
       <div class="row">
         <h2>Images</h2>
       </div>
-
       <div class="row">
         <h4>100% width Image</h4>
         <img class="full" src="https://picsum.photos/465/325?grayscale">
@@ -565,9 +570,8 @@
       <br />
       <div class="row">
         <h4>Static Image(doesn't change size)</h4>
-        <img src="https://picsum.photos/100/100?grayscale">
+        <img src="https://picsum.photos/950/300?grayscale">
       </div>
-
       <div class="row">
         Images from <strong><a href="https://picsum.photos" target="_blank">Lorem Picsum</a></strong>
       </div>
@@ -637,13 +641,12 @@
     <div class="modal-body max-full m0 fill-space center">
       <div class="modal-close modal-btn">x</div>
       <div class="row">
-        <h2>This modal fills the whole page</h1>
+        <h2>Whole page modal</h1>
       </div>
       <div class="row">
         <p class="center">
-          Welcome
+          This modal fills the whole page
         </p>
-        <small>Sadly pizza isn't one</small>
       </div>
     </div>
   </div>
@@ -652,7 +655,7 @@
     <div class="modal-body center">
       <div class="modal-close modal-btn">x</div>
       <div class="row">
-        <h2>The Great Example of Modal</h1>
+        <h2>Big Modal</h1>
       </div>
       <div class="row">
         <p>
@@ -667,13 +670,12 @@
     <div class="modal-body small center">
       <div class="modal-close modal-btn">x</div>
       <div class="row">
-        <h2>Very Small Modal</h1>
+        <h2>Small Modal</h1>
       </div>
       <div class="row">
         <p>
-          For a lot of small thing
+          For small things
         </p>
-        <small>Sadly small pizza isn't one</small>
       </div>
     </div>
   </div>

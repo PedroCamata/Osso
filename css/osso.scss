@@ -4,7 +4,7 @@
 * Inspired by www.getskeleton.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 03/09/2019
+* Created at 03/09/2019
 */
 
 // Config
@@ -203,7 +203,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 3.8rem;
+  min-height: 3.8rem;
   padding: 0 3rem;
   color: $default-button-text-color;
   text-align: center;
@@ -211,7 +211,6 @@ input[type="button"] {
   font-weight: 600;
   line-height: 38px;
   text-decoration: none;
-  white-space: nowrap;
   background-color: transparent;
   border-radius: $border-radius;
   border: $border;
@@ -254,7 +253,7 @@ input[type="password"],
 input[type="date"],
 textarea,
 select {
-  height: 3.8rem;
+  min-height: 3.8rem;
   padding: 0 1rem;
   background-color: $input-background-color;
   color: $body-text-color;
@@ -263,6 +262,10 @@ select {
   box-shadow: none;
   box-sizing: border-box;
   font-family: $font-stack;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.8);
 }
 
 textarea {
@@ -339,7 +342,6 @@ code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
   font-size: 90%;
-  white-space: nowrap;
   background: $code-background-color;
   border: $border;
   border-radius: 0px;
@@ -375,15 +377,16 @@ td {
 
 // Card
 .card {
-  display: inline-block;
+  display: block;
   border-radius: 0px;
   border: $border;
   box-sizing: border-box;
 
+
   &.big {
     display: block;
     width: 98%;
-    margin: 0.25rem 1%;
+    margin: .25rem 1%;
   }
 }
 
@@ -421,6 +424,11 @@ section {
     top: 0px;
     width: 100%;
     z-index: 1;
+  }
+
+  .logo {
+    height: 2.5rem;
+    margin-bottom: -.75rem;
   }
 }
 
@@ -516,8 +524,10 @@ hr {
   border-top: $border;
 }
 
-img.zoomable {
-  cursor: pointer;
+img {
+  &.zoomable {
+    cursor: pointer;
+  }
 }
 
 *::selection {
@@ -539,7 +549,7 @@ section:after {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.8);
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -649,7 +659,7 @@ section:after {
 
 // Padding
 .p05 {
-  padding: 0.5rem;
+  padding: .5rem;
 }
 .p1 {
   padding: 1rem;
