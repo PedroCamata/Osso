@@ -382,7 +382,6 @@ td {
   border: $border;
   box-sizing: border-box;
 
-
   &.big {
     display: block;
     width: 98%;
@@ -677,4 +676,8 @@ section:after {
 
 .no-border {
   border: none;
+}
+
+.inlineb {
+  display: inline-block;
 }

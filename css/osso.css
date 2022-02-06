@@ -608,4 +608,8 @@ section:after {
   border: none;
 }
 
+.inlineb {
+  display: inline-block;
+}
+
 /*# sourceMappingURL=osso.css.map */
