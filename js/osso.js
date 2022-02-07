@@ -68,4 +68,23 @@ document.addEventListener('click', (event) => {
         }
         card.remove();
     }
+
+    // Dropdown
+    if (event.target.matches(".dropdown button")) {
+        let targetElem = event.target.closest(".dropdown");
+
+        let dropDownContent = targetElem.getElementsByClassName("dropdown-content")[0];
+
+        if (dropDownContent.style.display != "block") {
+            dropDownContent.style.display = "block";
+        } else {
+            dropDownContent.style.display = "none";
+        }
+    } else {
+        let allColumnOptions = document.getElementsByClassName("dropdown-content");
+
+        for (let i = 0; i < allColumnOptions.length; i++) {
+            allColumnOptions[i].style.display = "none";
+        }
+    }
 }, false);
