@@ -295,6 +295,10 @@ select:focus {
   background-color: #ccc;
 }
 
+.textInput .input {
+  display: none;
+}
+
 label,
 legend {
   display: block;
@@ -575,7 +579,7 @@ section:after {
   background-color: #140001;
 }
 
-.bg-warning {
+.bg-warn {
   background-color: #141000;
 }
 

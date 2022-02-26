@@ -337,6 +337,20 @@
       </div>
     </section>
 
+    <section class="center">
+      <div class="row">
+        <h2>Label to Input</h2>
+      </div>
+      <div class="row">
+        <div class="textInput">
+          <div class="text">
+            Example Text
+          </div>
+          <input class="input" name="example-textInput" type="text" value="Example Text" />
+        </div>
+      </div>
+    </section>
+
     <section>
       <div class="row">
         <h2>Table</h2>
@@ -510,7 +524,6 @@
           <br />
           <a class="button modal-btn full" target="uniqueSmallModal">Click to show Small Modal</a>
         </div>
-
       </div>
     </section>
 
@@ -693,5 +706,12 @@
 </body>
 
 <script src="js/osso.js"></script>
+<script>
+  // TextInput example
+  textInputAction = (name, newValue) => {
+    console.log("User changed '" + name + "' value to '" + newValue + "'");
+    return true;
+  }
+</script>
 
 </html>
