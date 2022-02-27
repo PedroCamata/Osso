@@ -93,14 +93,14 @@ document.addEventListener('click', (event) => {
     // Label input click
     if (event.target.matches(".labelInput .text")) {
         // Show input
-        let elem = event.target;
-        elem.closest(".labelInput")
+        let textLabelInput = event.target;
+        textLabelInput.closest(".labelInput")
             .getElementsByClassName("input")[0]
             .style
             .display = "inline-block";
 
         // Hide text
-        elem.style.display = "none";
+        textLabelInput.style.display = "none";
     } else if (!event.target.matches(".labelInput .input")) {
         let labelInputElems = document.getElementsByClassName("labelInput");
         for (let i = 0; i < labelInputElems.length; i++) {
