@@ -196,7 +196,6 @@ input[type=button]:focus {
   outline: 0;
   text-decoration: none;
 }
-
 .button.primary,
 button.primary,
 input[type=submit].primary,
@@ -219,6 +218,30 @@ input[type=button].primary:focus {
   background-color: #eee;
   border-color: #eee;
 }
+.button:disabled,
+button:disabled,
+input[type=submit]:disabled,
+input[type=reset]:disabled,
+input[type=button]:disabled {
+  color: #444;
+  background-color: #222;
+  border-color: transparent;
+}
+.button:disabled:hover, .button:disabled:focus,
+button:disabled:hover,
+button:disabled:focus,
+input[type=submit]:disabled:hover,
+input[type=submit]:disabled:focus,
+input[type=reset]:disabled:hover,
+input[type=reset]:disabled:focus,
+input[type=button]:disabled:hover,
+input[type=button]:disabled:focus {
+  color: #444;
+  background-color: #222;
+  border-color: transparent;
+  outline: 0;
+  text-decoration: none;
+}
 
 input[type=email],
 input[type=number],
@@ -239,6 +262,45 @@ select {
   box-shadow: none;
   box-sizing: border-box;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+input[type=email]:disabled,
+input[type=number]:disabled,
+input[type=search]:disabled,
+input[type=text]:disabled,
+input[type=tel]:disabled,
+input[type=url]:disabled,
+input[type=password]:disabled,
+input[type=date]:disabled,
+textarea:disabled,
+select:disabled {
+  color: #444;
+  background-color: #222;
+  border: none;
+}
+input[type=email]:disabled:hover, input[type=email]:disabled:focus,
+input[type=number]:disabled:hover,
+input[type=number]:disabled:focus,
+input[type=search]:disabled:hover,
+input[type=search]:disabled:focus,
+input[type=text]:disabled:hover,
+input[type=text]:disabled:focus,
+input[type=tel]:disabled:hover,
+input[type=tel]:disabled:focus,
+input[type=url]:disabled:hover,
+input[type=url]:disabled:focus,
+input[type=password]:disabled:hover,
+input[type=password]:disabled:focus,
+input[type=date]:disabled:hover,
+input[type=date]:disabled:focus,
+textarea:disabled:hover,
+textarea:disabled:focus,
+select:disabled:hover,
+select:disabled:focus {
+  color: #444;
+  background-color: #222;
+  border-color: #ccc;
+  outline: 0;
+  text-decoration: none;
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
@@ -295,8 +357,23 @@ select:focus {
   background-color: #ccc;
 }
 
-.textInput .input {
+.labelInput div.text {
+  line-height: 3.8rem;
+}
+.labelInput .text {
+  border: 1px solid #444;
+  border-color: transparent;
+}
+.labelInput .text:hover {
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #aaa;
+  border-color: #eee;
+  background-color: #333;
+}
+.labelInput .input {
   display: none;
+  margin: 0;
 }
 
 label,

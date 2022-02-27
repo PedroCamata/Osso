@@ -1,6 +1,6 @@
 "use strict";
 
-let textInputAction = false;
+let labelInputAction = false;
 
 document.addEventListener('click', (event) => {
     if (event.target.matches('.modal-btn')
@@ -91,28 +91,28 @@ document.addEventListener('click', (event) => {
     }
 
     // Label input click
-    if (event.target.matches(".textInput .text")) {
+    if (event.target.matches(".labelInput .text")) {
         // Show input
         let elem = event.target;
-        elem.closest(".textInput")
+        elem.closest(".labelInput")
             .getElementsByClassName("input")[0]
             .style
             .display = "inline-block";
 
         // Hide text
         elem.style.display = "none";
-    } else if (!event.target.matches(".textInput .input")) {
-        let textInputElems = document.getElementsByClassName("textInput");
-        for (let i = 0; i < textInputElems.length; i++) {
-            let inputElem = textInputElems[i].getElementsByClassName("input")[0];
+    } else if (!event.target.matches(".labelInput .input")) {
+        let labelInputElems = document.getElementsByClassName("labelInput");
+        for (let i = 0; i < labelInputElems.length; i++) {
+            let inputElem = labelInputElems[i].getElementsByClassName("input")[0];
             let inputValue = inputElem.value;
 
-            let textElem = textInputElems[i].getElementsByClassName("text")[0];
+            let textElem = labelInputElems[i].getElementsByClassName("text")[0];
 
             if (inputValue != textElem.innerHTML
-                && textInputAction) {
+                && labelInputAction) {
                 // Call API
-                if (textInputAction(inputElem.name, inputValue)) {
+                if (labelInputAction(inputElem.name, inputValue)) {
                     textElem.innerHTML = inputValue;
                 }
             }
