@@ -112,15 +112,21 @@ document.addEventListener('click', (event) => {
         let labelInputElems = document.getElementsByClassName("labelInput");
         for (let i = 0; i < labelInputElems.length; i++) {
             let inputElem = labelInputElems[i].getElementsByClassName("input")[0];
-            let inputValue = inputElem.value;
+
+            // Remove <script> tags
+            let inputValueSanitized = inputElem.value
+                .replace(/<script[^>]*>/gi, "<code>")
+                .replace(/<\/script>/gi, "</code>");
+            inputElem.value = inputValueSanitized;
 
             let textElem = labelInputElems[i].getElementsByClassName("text")[0];
 
-            if (inputValue != textElem.innerHTML
+            if (inputValueSanitized != textElem.innerHTML
                 && labelInputAction) {
                 // Call API
-                if (labelInputAction(inputElem.name, inputValue)) {
-                    textElem.innerHTML = inputValue;
+                if (labelInputAction(inputElem.name, inputValueSanitized)) {
+                    // Replace string line break to <br>
+                    textElem.innerHTML = inputValueSanitized.replace(/(?:\r\n|\r|\n)/g, "<br>");
                 }
             }
 
