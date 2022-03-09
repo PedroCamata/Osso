@@ -1,5 +1,6 @@
 "use strict";
 
+let labelInputBeforeAction = false;
 let labelInputAction = false;
 
 document.addEventListener('click', (event) => {
@@ -94,13 +95,19 @@ document.addEventListener('click', (event) => {
     if (event.target.matches(".labelInput .text")) {
         // Show input
         let textLabelInput = event.target;
-        textLabelInput.closest(".labelInput")
-            .getElementsByClassName("input")[0]
-            .style
-            .display = "inline-block";
+        let inputElem = textLabelInput.closest(".labelInput")
+                                      .getElementsByClassName("input")[0];
+
+        inputElem.style.display = "inline-block";
 
         // Hide text
         textLabelInput.style.display = "none";
+
+        // Call API
+        if (labelInputBeforeAction) {
+            labelInputBeforeAction(inputElem.name);
+        }
+
     } else if (!event.target.matches(".labelInput .input")) {
         let labelInputElems = document.getElementsByClassName("labelInput");
         for (let i = 0; i < labelInputElems.length; i++) {
