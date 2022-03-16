@@ -356,19 +356,19 @@ select:focus {
   & .text {
     border: $border;
     border-color: transparent;
-    
-    &:hover {
+  }
+
+  & .input {
+    display: none;
+    margin: 0;
+
+    & + .text:hover {
       border: $border;
       border-radius: $border-radius;
       color: $default-button-text-color;
       border-color: $primary-button-hover-background-color;
       background-color: $text-selection-color;
     }
-  }
-
-  & .input {
-    display: none;
-    margin: 0;
   }
 }
 

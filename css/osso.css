@@ -364,16 +364,16 @@ select:focus {
   border: 1px solid #444;
   border-color: transparent;
 }
-.labelInput .text:hover {
+.labelInput .input {
+  display: none;
+  margin: 0;
+}
+.labelInput .input + .text:hover {
   border: 1px solid #444;
   border-radius: 4px;
   color: #aaa;
   border-color: #eee;
   background-color: #333;
-}
-.labelInput .input {
-  display: none;
-  margin: 0;
 }
 
 label,
