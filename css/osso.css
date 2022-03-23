@@ -361,19 +361,20 @@ select:focus {
   line-height: 3.8rem;
 }
 .labelInput .text {
+  min-height: 3.8rem;
   border: 1px solid #444;
   border-color: transparent;
 }
-.labelInput .input {
-  display: none;
-  margin: 0;
-}
-.labelInput .input + .text:hover {
+.labelInput .text:hover {
   border: 1px solid #444;
   border-radius: 4px;
   color: #aaa;
   border-color: #eee;
   background-color: #333;
+}
+.labelInput .input {
+  display: none;
+  margin: 0;
 }
 
 label,
