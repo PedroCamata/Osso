@@ -93,12 +93,26 @@ document.addEventListener('click', (event) => {
 
     // Label input click
     if (event.target.matches(".labelInput .text")) {
+
+        hideAndSaveAllLabelInputs();
+
         // Show input
         let textLabelInput = event.target;
         let inputElem = textLabelInput.closest(".labelInput")
-                                      .getElementsByClassName("input")[0];
+            .getElementsByClassName("input")[0];
 
-        inputElem.style.display = "inline-block";
+        // Get style from text element
+        let textStyle = window.getComputedStyle(textLabelInput);
+
+        // Asign some of text element style to input element
+        Object.assign(inputElem.style, {
+            display: "inline-block",
+            fontSize: textStyle.getPropertyValue("font-size"),
+            padding: textStyle.getPropertyValue("padding"),
+            margin: textStyle.getPropertyValue("margin"),
+            lineHeight: textStyle.getPropertyValue("line-height"),
+            textAlign: textStyle.getPropertyValue("text-align")
+        });
 
         // Hide text
         textLabelInput.style.display = "none";
@@ -109,6 +123,11 @@ document.addEventListener('click', (event) => {
         }
 
     } else if (!event.target.matches(".labelInput .input")) {
+        hideAndSaveAllLabelInputs();
+    }
+
+    // Private function
+    function hideAndSaveAllLabelInputs() {
         let labelInputElems = document.getElementsByClassName("labelInput");
         for (let i = 0; i < labelInputElems.length; i++) {
             let inputElem = labelInputElems[i].getElementsByClassName("input")[0];
@@ -130,9 +149,9 @@ document.addEventListener('click', (event) => {
                 }
             }
 
-            textElem.style.display = "inherit";
-            inputElem.style.display = "";
+            textElem.style.display = ""; // inherit
+            inputElem.style.display = ""; // none by default
         }
     }
-
 }, false);
+

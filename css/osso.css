@@ -366,15 +366,13 @@ select:focus {
   border-color: transparent;
 }
 .labelInput .text:hover {
-  border: 1px solid #444;
+  cursor: pointer;
   border-radius: 4px;
   color: #aaa;
-  border-color: #eee;
-  background-color: #333;
+  background-color: #222;
 }
 .labelInput .input {
   display: none;
-  margin: 0;
 }
 
 label,

@@ -359,17 +359,15 @@ select:focus {
     border-color: transparent;
     
     &:hover {
-      border: $border;
+      cursor: pointer;
       border-radius: $border-radius;
       color: $default-button-text-color;
-      border-color: $primary-button-hover-background-color;
-      background-color: $text-selection-color;
+      background-color: $code-background-color;
     }
   }
 
   & .input {
     display: none;
-    margin: 0;
   }
 }
 
